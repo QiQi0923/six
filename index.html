@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>课程标题写这里</title>
+  <style>
+    :root { --ink: #1d1d1f; --line: #e6e6e6; --mark: #fff0bd; --blue: #159ed6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f5f5; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    main { width: min(100%, 1080px); min-height: 100vh; margin: 0 auto; padding: 38px 30px 70px; background: #fff; }
+    h1 { margin: 0 0 34px; font-size: 28px; line-height: 1.4; }
+    section { padding: 0 0 34px; margin: 0 0 36px; border-bottom: 1px solid var(--line); }
+    h2 { display: inline; margin: 0; padding: 3px 5px; font-size: 22px; line-height: 1.65; background: var(--mark); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+    .number { display: inline-grid; width: 28px; height: 28px; margin-right: 5px; place-items: center; color: #fff; font-size: 18px; background: var(--blue); border-radius: 4px; vertical-align: 1px; }
+    p { margin: 18px 0 0; font-size: 19px; line-height: 1.8; white-space: pre-line; }
+    .images { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+    .images img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    .tip { color: #666; font-size: 15px; }
+    @media (max-width: 640px) { main { padding: 24px 16px 50px; } h1 { font-size: 24px; } h2 { font-size: 20px; } p { font-size: 17px; } .images { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>课程标题写这里</h1>
+
+    <section>
+      <h2><span class="number">1</span>小节标题写这里</h2>
+      <p>第一段课程文字写这里。</p>
+      <p>第二段课程文字写这里。</p>
+    </section>
+
+    <section>
+      <h2><span class="number">2</span>小节标题写这里</h2>
+      <p>这一节的课程文字写这里。</p>
+      <div class="images">
+        <img src="images/01.jpg" alt="">
+        <img src="images/02.jpg" alt="">
+        <img src="images/03.jpg" alt="">
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="number">3</span>小节标题写这里</h2>
+      <p>继续写课程内容。需要新小节时，复制上面任意一个 section 从 &lt;section&gt; 到 &lt;/section&gt; 的全部内容，再替换文字和图片名称。</p>
+    </section>
+  </main>
+</body>
+</html>
